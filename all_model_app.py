@@ -132,9 +132,9 @@ if submitted:
         predicted_price_3 = model_3.predict([final_input])
 
         st.success("**PRICE PREDICTION RESULTS**")
-        st.write(f"XGBoost Model Price Prediction: **{predicted_price_1[0]:,.2f} Bath**")
-        st.write(f"Random Forest Model Price Prediction: **{predicted_price_2[0]:,.2f} Bath**")
-        st.write(f"Neural Network Model Price Prediction: **{predicted_price_3[0]:,.2f} Bath**")
+        st.write(f"XGBoost Model Price Prediction: **{predicted_price_1[0]:,.2f} THB**")
+        st.write(f"Random Forest Model Price Prediction: **{predicted_price_2[0]:,.2f} THB**")
+        st.write(f"Neural Network Model Price Prediction: **{predicted_price_3[0]:,.2f} THB**")
 
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาด: {e}")
